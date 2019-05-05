@@ -19,7 +19,7 @@ namespace Vortx.Test.ViewModel
                 Type = 1                           
             };
 
-            var automapper = Automapper.Bootstrap();
+            var automapper = Automapper.BootStrapper();
             IMapper mapper = automapper.CreateMapper();
 
             var _model = mapper.Map<TelephoneLine>(phone);

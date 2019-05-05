@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Vortx.Domain.Core.EntityBase;
 using Vortx.Domain.Core.ValueObject;
 using Vortx.Domain.Validation;

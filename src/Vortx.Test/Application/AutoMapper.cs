@@ -13,7 +13,7 @@ namespace Vortx.Test.Application
         [TestMethod]
         public void Bootstrap()
         {
-            var automapper = Automapper.Bootstrap();
+            var automapper = Automapper.BootStrapper();
             Assert.IsNotNull(automapper);
             Assert.IsInstanceOfType(automapper, typeof(MapperConfiguration));            
         }
@@ -21,7 +21,7 @@ namespace Vortx.Test.Application
         [TestMethod]
         public void CreateInstanceAutomapper()
         {
-            var automapper = Automapper.Bootstrap();
+            var automapper = Automapper.BootStrapper();
             IMapper mapper = automapper.CreateMapper();
             Assert.IsInstanceOfType(mapper, typeof(IMapper));
         }

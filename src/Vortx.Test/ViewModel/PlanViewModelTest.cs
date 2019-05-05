@@ -15,19 +15,20 @@ namespace Vortx.Test.ViewModel
         {
             var planViewModel = new PlanViewModel
             {
-                Destiny = "016",
-                Origin = "011",
-                Minute = DateTime.Now,
-                PlanCode = 1,
-                PricePerMinute = 16m
+                //Destiny = 1,
+                Origin = Domain.Core.Enumerators.EDDD.SaoPaulo11,
+                StartTime = DateTime.Now,
+                EndTime = DateTime.Now,
+                Destiny = Domain.Core.Enumerators.EDDD.SaoPaulo16,
+                PlanCode = Domain.Core.Enumerators.EPlan.Default,                
             };
 
-            var automapper = Automapper.Bootstrap();
+            var automapper = Automapper.BootStrapper();
             IMapper mapper = automapper.CreateMapper();
 
-            var _modelMapped = mapper.Map<TelephonyPlan>(planViewModel);
+            var _modelMapped = mapper.Map<Plan>(planViewModel);
             Assert.IsNotNull(_modelMapped);
-            Assert.IsInstanceOfType(_modelMapped, typeof(TelephonyPlan));
+            Assert.IsInstanceOfType(_modelMapped, typeof(Plan));
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Vortx.Test.Model
                 Type = 1
             };
 
-            var automapper = Automapper.Bootstrap();
+            var automapper = Automapper.BootStrapper();
             IMapper mapper = automapper.CreateMapper();
 
             var _modelMapped = mapper.Map<Customer>(customerViewModel);
@@ -53,7 +53,7 @@ namespace Vortx.Test.Model
                 Type = 1
             };
 
-            var automapper = Automapper.Bootstrap();
+            var automapper = Automapper.BootStrapper();
             IMapper mapper = automapper.CreateMapper();
 
             var _modelMapped = mapper.Map<Customer>(customerViewModel);
@@ -77,7 +77,7 @@ namespace Vortx.Test.Model
                 Type = 1
             };
 
-            var automapper = Automapper.Bootstrap();
+            var automapper = Automapper.BootStrapper();
             IMapper mapper = automapper.CreateMapper();
 
             var _modelMapped = mapper.Map<Customer>(customerViewModel);

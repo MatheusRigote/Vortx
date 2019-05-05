@@ -3,6 +3,8 @@
     public enum EPlan
     {
         Default = 0,
-        SpeakMore = 1
+        SpeakMore30 = 30,
+        SpeakMore60 = 60,
+        SpeakMore120 = 120
     }
 }

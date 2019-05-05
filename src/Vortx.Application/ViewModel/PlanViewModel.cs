@@ -1,13 +1,14 @@
 ﻿using System;
+using Vortx.Domain.Core.Enumerators;
 
 namespace Vortx.Application.ViewModel
 {
     public class PlanViewModel
     {
-        public int PlanCode { get; set; }
-        public string Origin { get; set; }
-        public string Destiny { get; set; }
-        public DateTime Minute { get; set; }
-        public decimal PricePerMinute { get; set; }        
+        public EPlan PlanCode { get; set; }
+        public EDDD Origin { get; set; }        
+        public EDDD Destiny { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }        
     }
 }

@@ -5,7 +5,7 @@ namespace Vortx.Application.AutoMapper.Config
 {
     public static class Automapper
     {
-        public static MapperConfiguration Bootstrap()
+        public static MapperConfiguration BootStrapper()
         {
             return new MapperConfiguration(config =>
             {

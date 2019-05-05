@@ -27,12 +27,12 @@ namespace Vortx.Application.AutoMapper.Mapping
                 .ForPath(m => m.Number, v => v.MapFrom(vm => vm.Number))
                 .ReverseMap();
 
-            CreateMap<PlanViewModel, TelephonyPlan>()
-                .ForPath(m => m.EPlan, v => v.MapFrom(vm => vm.PlanCode))
-                .ForPath(m => m.Destiny, v => v.MapFrom(vm => vm.Destiny))
-                .ForPath(m => m.Origin, v => v.MapFrom(vm => vm.Origin))
-                .ForPath(m => m.Minute, v => v.MapFrom(vm => vm.Minute))
-                .ForPath(m => m.PricePerMinute, v => v.MapFrom(vm => vm.PricePerMinute))
+            CreateMap<PlanViewModel, Plan>()
+                .ForPath(m => m.EPlanCode, v => v.MapFrom(vm => vm.PlanCode))     
+                .ForPath(m => m.EDestiny, v => v.MapFrom(vm => vm.Destiny))
+                .ForPath(m => m.EOrigin, v => v.MapFrom(vm => vm.Origin))
+                .ForPath(m => m.StartTime, v => v.MapFrom(vm => vm.StartTime))
+                .ForPath(m => m.EndTime, v => v.MapFrom(vm => vm.EndTime))                
                 .ReverseMap();
         }
     }
